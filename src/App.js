@@ -5,7 +5,7 @@ import './Styles/App.scss';
 
 function App() {
   return (
-    <div>
+    <div className='main'>
         <Representation/>
         <Portfolio/>
     </div>

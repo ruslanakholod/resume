@@ -1,7 +1,6 @@
 .representation {
   width: 50%;
   height: 100vh;
-  background: #0E0E0E;
 
   @media (max-width: 569px) {
     width: 100%;
@@ -9,10 +8,17 @@
   }
 
   &__wrapper {
-    padding: 20%;
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    padding: 15%;
+    background: #0E0E0E;
 
     @media (max-width: 569px) {
-      padding: 20% 10%;
+      width: 100%;
+      height: auto;
+      position: relative;
+      padding: 15% 10%;
     }
   }
 
