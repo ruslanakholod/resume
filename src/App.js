@@ -3,13 +3,15 @@ import Representation from './Components/Representation';
 import Portfolio from './Components/Portfolio';
 import './Styles/App.scss';
 
-function App() {
-  return (
-    <div className='main'>
-        <Representation/>
-        <Portfolio/>
-    </div>
-  );
+class App extends React.Component {
+    render() {
+        return (
+            <div className='main'>
+                <Representation/>
+                <Portfolio/>
+            </div>
+        )
+    }
 }
 
 export default App;

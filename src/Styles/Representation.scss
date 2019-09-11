@@ -11,14 +11,13 @@
     position: fixed;
     width: 50%;
     height: 100%;
-    padding: 15%;
+    padding: 15% 10%;
     background: #0E0E0E;
 
     @media (max-width: 569px) {
       width: 100%;
       height: auto;
       position: relative;
-      padding: 15% 10%;
     }
   }
 
@@ -30,6 +29,16 @@
     background-image: url('/images/photo.JPG');
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (max-width: 1023px) and (min-width: 768px) {
+      width: 160px;
+      height: 160px;
+    }
+
+    @media (max-width: 767px) {
+      width: 130px;
+      height: 130px;
+    }
   }
 
   &__text {
@@ -46,16 +55,38 @@
       &:before {
         content: '';
         display: block;
-        height: 1px;
+        height: 2px;
         width: 100%;
         background: #0062FF;
       }
     }
 
-    p{
+    p {
       margin: 15px 0;
-      font-size: 14px;
-      line-height: 23px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+
+    & > a {
+      flex-shrink: 0;
+      margin: 0 10px;
+    }
+
+    &_mail {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      text-align: center;
+      background: white;
+
+      svg {
+        margin-top: 5.5px;
+      }
     }
   }
 }

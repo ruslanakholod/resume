@@ -4,20 +4,18 @@
 
   &__wrapper {
     text-align: center;
-    padding: 22px 25px 15px 25px;
+    padding: 25px;
   }
 
   &__title {
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 21px;
     line-height: 23px;
     font-weight: 700;
   }
 
   &__description {
     margin-bottom: 25px;
-    font-size: 12px;
-    line-height: 15px;
   }
 
   &__img {
@@ -30,7 +28,6 @@
 
   &__instruments {
     margin-top: 15px;
-    font-size: 10px;
-    line-height: 10px;
+    font-size: 14px;
   }
 }

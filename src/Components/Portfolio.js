@@ -3,6 +3,31 @@ import './../Styles/Portfolio.scss';
 import Project from "./Project";
 
 class Portfolio extends React.Component {
+
+    state = {
+        projects: [
+            {
+                title: 'Apple website',
+                description: 'Lorem ipsum dolor sit amet, id harum euripidis necessitatibu. Harum euripidis necessitatibu deherhoene.',
+                img: '/images/photo.JPG',
+                instruments: 'react / bootstrap / python'
+            },
+            {
+                title: 'Apple',
+                description: 'Lorem ipsum dolor sit amet, id harum euripidis necessitatibu. Harum euripidis necessitatibu deherhoene.',
+                img: '/images/photo.JPG',
+                instruments: 'react / bootstrap / python'
+            },
+            {
+                title: 'website',
+                description: 'Lorem ipsum dolor sit amet, id harum euripidis necessitatibu. Harum euripidis necessitatibu deherhoene.',
+                img: '/images/photo.JPG',
+                instruments: 'react / bootstrap / python'
+            }
+        ]
+    };
+
+
     render() {
         return (
             <div className='portfolio'>
@@ -12,24 +37,10 @@ class Portfolio extends React.Component {
                         <a href='#'>CV</a>
                     </div>
                     <div className='portfolio__projects'>
-                        <Project title='Apple website'
-                                 description='Lorem ipsum dolor sit amet, id harum euripidis necessitatibu. Harum euripidis necessitatibu deherhoene.'
-                                 image='/images/photo.JPG'
-                                 instruments='react / bootstrap / python'
-
-                        />
-                        <Project title='Apple website'
-                                 description='Lorem ipsum dolor sit amet, id harum euripidis necessitatibu. Harum euripidis necessitatibu deherhoene.'
-                                 image='/images/photo.JPG'
-                                 instruments='react / bootstrap / python'
-
-                        />
-                        <Project title='Apple website'
-                                 description='Lorem ipsum dolor sit amet, id harum euripidis necessitatibu. Harum euripidis necessitatibu deherhoene.'
-                                 image='/images/photo.JPG'
-                                 instruments='react / bootstrap / python'
-
-                        />
+                        {this.state.projects.map((project, index) => (
+                            <Project key={index} title={project.title} description={project.description} image={project.img}
+                                     instruments={project.instruments}/>
+                        ))}
                     </div>
                 </div>
             </div>
