@@ -16,6 +16,8 @@ class ToggleButton extends React.Component {
         })
     };
 
+
+
     render() {
 
         let btn_class = this.state.position? 'menu__button' : 'menu__button open';
@@ -25,8 +27,10 @@ class ToggleButton extends React.Component {
                 <div onClick={this.toggleHidden} className={btn_class}/>
                 {!this.state.isHidden &&
                     <ul className='menu__list'>
-                        <li>Portfolio</li>
-                        <li>CV</li>
+                        <li onClick={this.props.onClick}>Portfolio</li>
+                        <li>
+                            <a href='#'>CV</a>
+                        </li>
                     </ul>
                 }
             </div>

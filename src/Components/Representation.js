@@ -9,7 +9,7 @@ class Representation extends React.Component {
         return (
             <div className='representation'>
                 <div className='representation__wrapper'>
-                    <ToggleButton/>
+                    <ToggleButton onClick={this.props.scrollTo}/>
                     <div className='representation__photo'/>
                     <div className='representation__text'>
                         <h2>RUSLANA KHOLOD</h2>

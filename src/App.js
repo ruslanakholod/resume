@@ -4,11 +4,21 @@ import Portfolio from './Components/Portfolio';
 import './Styles/App.scss';
 
 class App extends React.Component {
+
+    divScrollTo = React.createRef();
+
+    handleScrollTo = () => {
+        this.divScrollTo.current.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest"
+        })
+    };
+
     render() {
         return (
             <div className='main'>
-                <Representation/>
-                <Portfolio/>
+                <Representation scrollTo={this.handleScrollTo}/>
+                <Portfolio divScrollTo={this.divScrollTo}/>
             </div>
         )
     }

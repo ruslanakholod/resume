@@ -30,7 +30,7 @@ class Portfolio extends React.Component {
 
     render() {
         return (
-            <div className='portfolio'>
+            <div ref={this.props.divScrollTo} className='portfolio'>
                 <div className='portfolio__wrapper'>
                     <div className='portfolio__head'>
                         <p>Portfolio</p>
