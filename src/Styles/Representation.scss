@@ -1,5 +1,5 @@
 .representation {
-  width: 50%;
+  width: 40%;
   height: 100vh;
 
   @media (max-width: 569px) {
@@ -9,15 +9,16 @@
 
   &__wrapper {
     position: fixed;
-    width: 50%;
+    width: 40%;
     height: 100%;
-    padding: 15% 10%;
+    padding: 15% 5%;
     background: #0E0E0E;
 
     @media (max-width: 569px) {
       width: 100%;
       height: auto;
       position: relative;
+      padding: 15% 5%;
     }
   }
 
@@ -63,6 +64,8 @@
 
     p {
       margin: 15px 0;
+      font-size: 19px;
+      line-height: 26px;
     }
   }
 

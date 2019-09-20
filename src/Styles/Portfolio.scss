@@ -1,12 +1,16 @@
 .portfolio {
-  width: 50%;
+  width: 60%;
 
   @media (max-width: 569px) {
     width: 100%;
   }
 
   &__wrapper {
-    padding: 15% 10%;
+    padding: 15%;
+
+    @media (max-width: 569px) {
+      padding: 10%;
+    }
   }
 
   &__head {
@@ -16,6 +20,11 @@
       font-size: 20px;
       line-height: 25px;
       color: #0062FF;
+
+      &:hover {
+        text-decoration: line-through;
+        transition: 0.25s text-decoration;
+      }
     }
 
     p {

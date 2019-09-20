@@ -34,12 +34,12 @@ class Portfolio extends React.Component {
                 <div className='portfolio__wrapper'>
                     <div className='portfolio__head'>
                         <p>Portfolio</p>
-                        <a href='#'>CV</a>
+                        <a href='/resume.pdf' target='_blank'>CV</a>
                     </div>
                     <div className='portfolio__projects'>
                         {this.state.projects.map((project, index) => (
                             <Project key={index} title={project.title} description={project.description} image={project.img}
-                                     instruments={project.instruments}/>
+                                instruments={project.instruments} />
                         ))}
                     </div>
                 </div>
