@@ -7,22 +7,42 @@ class Portfolio extends React.Component {
     state = {
         projects: [
             {
-                title: 'Apple website',
-                description: 'Lorem ipsum dolor sit amet, id harum euripidis necessitatibu. Harum euripidis necessitatibu deherhoene.',
+                title: 'Dashboard',
+                description: {
+                    text: 'An experiment to clone the User Interface and Experience of Apple TV and bring it to the web. When you open it, you see button in the upper right corner. The app allows you searching and adding an app to the dashboard. Once its added its possible to remove it or change its image. The app support keyboard navigation. Implemented apps:',
+                    list: ['Calculator app;', 'BookFly app: booking flight form providing a fetch-ready  query;']
+                },
                 img: '/images/photo.JPG',
-                instruments: 'react / bootstrap / python'
+                instruments: 'react / emotion / react Router',
+                links: {
+                    github: 'https://github.com/ruslanakholod/dashboard',
+                    live: 'https://appdashboard.netlify.com/'
+                }
             },
             {
-                title: 'Apple',
-                description: 'Lorem ipsum dolor sit amet, id harum euripidis necessitatibu. Harum euripidis necessitatibu deherhoene.',
+                title: 'WeatherNow',
+                description: {
+                    text: 'The WeatherNow app shows the current weather a city and allows sharing it by link.',
+                    list: null
+                },
                 img: '/images/photo.JPG',
-                instruments: 'react / bootstrap / python'
+                instruments: 'react / emotion / react-router',
+                links: {
+                    github: 'https://github.com/ruslanakholod/weather',
+                    live: null
+                }
             },
             {
-                title: 'website',
-                description: 'Lorem ipsum dolor sit amet, id harum euripidis necessitatibu. Harum euripidis necessitatibu deherhoene.',
-                img: '/images/photo.JPG',
-                instruments: 'react / bootstrap / python'
+                title: 'GitHubSearch',
+                description: {
+                    text: 'The GitHubSearch app gives the basic GitHub user info by username and allows sharing it by link.',
+                    list: null
+                }, img: '/images/photo.JPG',
+                instruments: 'react / emotion / react-router / graphQL / Apollo',
+                links: {
+                    github: 'https://github.com/ruslanakholod/githubsearch',
+                    live: 'https://appdashboard.netlify.com/'
+                }
             }
         ]
     };
@@ -39,7 +59,7 @@ class Portfolio extends React.Component {
                     <div className='portfolio__projects'>
                         {this.state.projects.map((project, index) => (
                             <Project key={index} title={project.title} description={project.description} image={project.img}
-                                instruments={project.instruments} />
+                                instruments={project.instruments} links={project.links} />
                         ))}
                     </div>
                 </div>

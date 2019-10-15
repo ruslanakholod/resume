@@ -11,12 +11,26 @@
     margin-bottom: 15px;
     font-size: 23px;
     line-height: 23px;
-    font-weight: 700;
+    font-weight: bold;
   }
 
   &__description {
+    text-align: left;
     margin-bottom: 25px;
     font-size: 18px;
+
+    ul {
+      margin: 10px 0 0 20px;
+    }
+  }
+
+  &__links {
+    margin-top: 20px;
+
+    a {
+      margin: 0 5px;
+      color: #0062FF;
+    }
   }
 
   &__img {
