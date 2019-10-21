@@ -13,7 +13,7 @@ class Portfolio extends React.Component {
                     list: ['Calculator app;', 'BookFly app: booking flight form providing a fetch-ready  query;']
                 },
                 img: '/images/dashboard.png',
-                instruments: 'react / emotion / react Router',
+                instruments: 'react / emotion / react router',
                 links: {
                     github: 'https://github.com/ruslanakholod/dashboard',
                     live: 'https://appdashboard.netlify.com/'
