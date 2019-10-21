@@ -12,7 +12,7 @@ class Portfolio extends React.Component {
                     text: 'An experiment to clone the User Interface and Experience of Apple TV and bring it to the web. When you open it, you see button in the upper right corner. The app allows you searching and adding an app to the dashboard. Once its added its possible to remove it or change its image. The app support keyboard navigation. Implemented apps:',
                     list: ['Calculator app;', 'BookFly app: booking flight form providing a fetch-ready  query;']
                 },
-                img: '/images/photo.JPG',
+                img: '/images/dashboard.png',
                 instruments: 'react / emotion / react Router',
                 links: {
                     github: 'https://github.com/ruslanakholod/dashboard',
@@ -22,26 +22,26 @@ class Portfolio extends React.Component {
             {
                 title: 'WeatherNow',
                 description: {
-                    text: 'The WeatherNow app shows the current weather a city and allows sharing it by link.',
+                    text: 'The WeatherNow app shows the current weather a city.',
                     list: null
                 },
-                img: '/images/photo.JPG',
-                instruments: 'react / emotion / react-router',
+                img: '/images/weather.png',
+                instruments: 'react / emotion',
                 links: {
-                    github: 'https://github.com/ruslanakholod/weather',
-                    live: null
+                    github: 'https://github.com/ruslanakholod/weathernow',
+                    live: 'https://weathernowapp.netlify.com/'
                 }
             },
             {
                 title: 'GitHubSearch',
                 description: {
-                    text: 'The GitHubSearch app gives the basic GitHub user info by username and allows sharing it by link.',
+                    text: 'The GitHubSearch app gives the basic GitHub user info by username.',
                     list: null
-                }, img: '/images/photo.JPG',
-                instruments: 'react / emotion / react-router / graphQL / Apollo',
+                }, img: '/images/git.png',
+                instruments: 'react / emotion / graphQL / Apollo',
                 links: {
                     github: 'https://github.com/ruslanakholod/githubsearch',
-                    live: 'https://appdashboard.netlify.com/'
+                    live: 'https://appgithubsearch.netlify.com/'
                 }
             }
         ]
@@ -54,7 +54,7 @@ class Portfolio extends React.Component {
                 <div className='portfolio__wrapper'>
                     <div className='portfolio__head'>
                         <p>Portfolio</p>
-                        <a href='/resume.pdf' target='_blank'>CV</a>
+                        <a href='/Resume.pdf' rel="noopener noreferrer" target='_blank'>CV</a>
                     </div>
                     <div className='portfolio__projects'>
                         {this.state.projects.map((project, index) => (

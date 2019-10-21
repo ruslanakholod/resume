@@ -29,7 +29,7 @@ class ToggleButton extends React.Component {
                     <ul className='menu__list'>
                         <li onClick={this.props.onClick}>Portfolio</li>
                         <li>
-                            <a href='/resume.pdf' target='_blank'>CV</a>
+                            <a href='Rresume.pdf' rel="noopener noreferrer" target='_blank'>CV</a>
                         </li>
                     </ul>
                 }
