@@ -22,11 +22,11 @@ class Portfolio extends React.Component {
             {
                 title: 'WeatherNow',
                 description: {
-                    text: 'The WeatherNow app shows the current weather a city.',
+                    text: 'The WeatherNow app shows the current weather a city and allows sharing it by link.',
                     list: null
                 },
                 img: '/images/weather.png',
-                instruments: 'react / emotion',
+                instruments: 'react / emotion / react router',
                 links: {
                     github: 'https://github.com/ruslanakholod/weathernow',
                     live: 'https://weathernowapp.netlify.com/'
@@ -35,10 +35,10 @@ class Portfolio extends React.Component {
             {
                 title: 'GitHubSearch',
                 description: {
-                    text: 'The GitHubSearch app gives the basic GitHub user info by username.',
+                    text: 'The GitHubSearch app gives the basic GitHub user info by username and allows sharing it by link.',
                     list: null
                 }, img: '/images/git.png',
-                instruments: 'react / emotion / graphQL / Apollo',
+                instruments: 'react / emotion / graphQL / Apollo / react router',
                 links: {
                     github: 'https://github.com/ruslanakholod/githubsearch',
                     live: 'https://appgithubsearch.netlify.com/'
